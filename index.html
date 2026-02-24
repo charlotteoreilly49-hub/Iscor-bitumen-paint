@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Iscor Bitumen Black Paint — tar-based waterproof coating. 200L and 20L available. Nationwide delivery. Based in Three Rivers, Gauteng." />
+  <title>Iscor Bitumen Paint | Waterproof & Protection</title>
+
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --card:#11151b;
+      --text:#e9eef5;
+      --muted:#a9b4c0;
+      --line:rgba(255,255,255,.10);
+      --accent:#f6c000;
+      --accent2:#ffda4d;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius:18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    .topbar{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,13,16,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(246,192,0,.14)}
+    .nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .nav a{opacity:.9;text-decoration:none;font-weight:600;font-size:14px}
+    .nav a:hover{opacity:1;text-decoration:underline}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 16px;border-radius:999px;border:1px solid var(--line);
+      text-decoration:none;font-weight:800;cursor:pointer;transition:.2s;
+      background: rgba(255,255,255,.04);
+    }
+    .btn:hover{transform:translateY(-1px);border-color:rgba(246,192,0,.45)}
+    .btn.primary{
+      background: linear-gradient(180deg,var(--accent2),var(--accent));
+      color:#121212;border:none;
+      box-shadow: 0 12px 30px rgba(246,192,0,.18);
+    }
+    .btn.primary:hover{filter:saturate(1.05);transform:translateY(-1px)}
+    .hero{
+      padding:34px 0 18px;
+      display:grid;grid-template-columns: 1.1fr .9fr;gap:24px;align-items:center;
+    }
+    .kicker{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-weight:700}
+    .pill{padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);font-size:12px}
+    h1{font-size:44px;line-height:1.05;margin:14px 0 10px;letter-spacing:-.6px}
+    .sub{color:var(--muted);font-size:16px;line-height:1.55;max-width:60ch;margin:0 0 18px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 22px}
+    .badge{border:1px solid var(--line);background:rgba(255,255,255,.03);padding:8px 10px;border-radius:999px;font-weight:700;color:#dfe7f1;font-size:13px}
+    .heroCard{
+      background: radial-gradient(1200px 400px at 20% -10%, rgba(246,192,0,.18), transparent 55%),
+                  linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .heroImg{
+      width:100%;height:420px;display:block;object-fit:cover;
+      filter: contrast(1.05) saturate(1.05);
+    }
+    .heroCap{padding:14px 16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    .heroCap .muted{color:var(--muted);font-weight:700;font-size:13px}
+    .grid{
+      display:grid;grid-template-columns: repeat(12,1fr);gap:16px;margin:22px 0;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .card h2{margin:0 0 10px;font-size:18px}
+    .card p{margin:0;color:var(--muted);line-height:1.55}
+    .col6{grid-column: span 6}
+    .col4{grid-column: span 4}
+    .col8{grid-column: span 8}
+    .col12{grid-column: span 12}
+
+    .priceWrap{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+    .price{
+      border-radius:16px;border:1px solid rgba(246,192,0,.25);
+      background: radial-gradient(700px 200px at 30% -10%, rgba(246,192,0,.22), transparent 60%),
+                  rgba(255,255,255,.03);
+      padding:16px;
+    }
+    .price .size{font-weight:900;letter-spacing:.3px}
+    .price .amt{font-size:34px;font-weight:950;margin:6px 0;color:var(--accent2)}
+    .price .vat{color:var(--muted);font-weight:700;font-size:12px}
+    ul{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.6}
+    .cta{
+      display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+      padding:18px;border-radius: var(--radius);
+      border:1px solid rgba(246,192,0,.28);
+      background: radial-gradient(900px 260px at 20% -10%, rgba(246,192,0,.22), transparent 60%),
+                  rgba(255,255,255,.03);
+    }
+    .cta strong{font-size:18px}
+    .cta .small{color:var(--muted);font-weight:700;margin-top:6px}
+    .footer{
+      margin-top:26px;padding:20px 0 30px;color:var(--muted);
+      border-top:1px solid var(--line);
+      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      font-size:13px;
+    }
+    .sectionTitle{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .sectionTitle h2{margin:0;font-size:22px}
+    .sectionTitle span{color:var(--muted);font-weight:700}
+
+    .faq details{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      border-radius:16px;
+      padding:14px 14px;
+      margin-top:10px;
+    }
+    .faq summary{cursor:pointer;font-weight:800}
+    .faq .ans{color:var(--muted);margin-top:10px;line-height:1.6}
+
+    @media (max-width: 900px){
+      h1{font-size:36px}
+      .hero{grid-template-columns: 1fr;gap:16px}
+      .heroImg{height:360px}
+      .col6,.col4,.col8{grid-column: span 12}
+      .priceWrap{grid-template-columns:1fr}
+      .topbar .wrap{padding:12px 16px}
+      .wrap{padding:18px}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>ISCOR BITUMEN PAINT</span>
+      </div>
+      <div class="nav">
+        <a href="#prices">Prices</a>
+        <a href="#uses">Uses</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact</a>
+        <a class="btn primary" href="https://wa.me/27764935600?text=Hi%20Charlotte%2C%20I%27d%20like%20to%20order%20Iscor%20Bitumen%20Paint.%20Please%20send%20prices%20and%20delivery%20options." target="_blank" rel="noopener">WhatsApp Now</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div>
+        <div class="kicker">
+          <span class="pill">Tar-based waterproof coating</span>
+          <span class="pill">Nationwide delivery</span>
+          <span class="pill">Three Rivers, Gauteng</span>
+        </div>
+
+        <h1>Waterproof &amp; Protection for Roofs, Steel &amp; More</h1>
+        <p class="sub">
+          <strong>Iscor Bitumen Black Paint</strong> is a durable tar-based coating used for sealing and waterproofing.
+          Ideal for roofs, metal, fencing, foundations and general surface protection.
+        </p>
+
+        <div class="badges">
+          <div class="badge">✅ Waterproofing</div>
+          <div class="badge">✅ Rust protection</div>
+          <div class="badge">✅ Long-lasting coating</div>
+          <div class="badge">✅ Bulk &amp; small quantities</div>
+        </div>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="#prices">View Prices</a>
+          <a class="btn" href="tel:+27764935600">Call 076 493 5600</a>
+          <a class="btn" href="https://wa.me/27764935600" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <!-- Replace photo.jpg with your image file name -->
+        <img class="heroImg" src="photo.jpg" alt="Iscor Bitumen Black Paint pricing and product" />
+        <div class="heroCap">
+          <div>
+            <div style="font-weight:900">ISCOR BITUMEN BLACK PAINT</div>
+            <div class="muted">Waterproof coating • Sealing &amp; protection</div>
+          </div>
+          <div class="muted">Based in Three Rivers • Nationwide delivery</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section class="grid" id="prices">
+      <div class="card col12">
+        <div class="sectionTitle">
+          <h2>Prices</h2>
+          <span>Excl VAT • While stock lasts</span>
+        </div>
+
+        <div class="priceWrap">
+          <div class="price">
+            <div class="size">200L Drum</div>
+            <div class="amt">R5800</div>
+            <div class="vat">EXCL VAT</div>
+          </div>
+          <div class="price">
+            <div class="size">20L Bucket</div>
+            <div class="amt">R800</div>
+            <div class="vat">EXCL VAT</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="https://wa.me/27764935600?text=Hi%20Charlotte%2C%20I%27d%20like%20pricing%20for%20200L%20and%2020L%20Iscor%20Bitumen%20Paint.%20Please%20advise%20delivery%20cost%20to%20my%20area." target="_blank" rel="noopener">Get a Quote on WhatsApp</a>
+          <a class="btn" href="#contact">Contact Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uses / Benefits -->
+    <section class="grid" id="uses">
+      <div class="card col6">
+        <h2>Common Uses</h2>
+        <ul>
+          <li>Roof sealing &amp; waterproofing</li>
+          <li>Steel &amp; metal surface protection</li>
+          <li>Fences, gates &amp; outdoor structures</li>
+          <li>Foundations &amp; concrete surfaces</li>
+          <li>General waterproof coating &amp; protection</li>
+        </ul>
+      </div>
+
+      <div class="card col6">
+        <h2>Why Choose This Product?</h2>
+        <ul>
+          <li>Tar-based coating designed for sealing</li>
+          <li>Helps protect against water damage</li>
+          <li>Helps reduce rust on metal surfaces</li>
+          <li>Strong, durable finish</li>
+          <li>Available in 20L and 200L</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="grid" id="delivery">
+      <div class="card col8">
+        <h2>Nationwide Delivery</h2>
+        <p>
+          We deliver across South Africa. Share your town/suburb on WhatsApp and we’ll confirm delivery cost and ETA.
+        </p>
+        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn primary" href="https://wa.me/27764935600?text=Hi%20Charlotte%2C%20please%20quote%20delivery%20for%20Iscor%20Bitumen%20Paint%20to%20_____%20(town%2Fsuburb)." target="_blank" rel="noopener">Check Delivery Cost</a>
+          <a class="btn" href="#prices">View Prices</a>
+        </div>
+      </div>
+
+      <div class="card col4">
+        <h2>Location</h2>
+        <p><strong>Based in:</strong> Three Rivers, Gauteng</p>
+        <p style="margin-top:10px"><strong>Contact:</strong> Charlotte</p>
+        <p><a href="tel:+27764935600" style="text-decoration:none;font-weight:900">076 493 5600</a></p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div>
+        <strong>Ready to order?</strong>
+        <div class="small">Message Charlotte on WhatsApp for stock, delivery &amp; bulk orders.</div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="https://wa.me/27764935600?text=Hi%20Charlotte%2C%20I%27d%20like%20to%20order%20Iscor%20Bitumen%20Paint.%20Please%20confirm%20stock%20and%20delivery%20options." target="_blank" rel="noopener">WhatsApp Charlotte</a>
+        <a class="btn" href="tel:+27764935600">Call Now</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="grid faq" style="margin-top:18px">
+      <div class="card col12">
+        <div class="sectionTitle">
+          <h2>FAQ</h2>
+          <span>Quick answers</span>
+        </div>
+
+        <details>
+          <summary>Do you deliver nationwide?</summary>
+          <div class="ans">Yes. Send your location on WhatsApp and we’ll confirm delivery cost and ETA.</div>
+        </details>
+
+        <details>
+          <summary>What sizes are available?</summary>
+          <div class="ans">20L bucket and 200L drum.</div>
+        </details>
+
+        <details>
+          <summary>Are prices VAT included?</summary>
+          <div class="ans">No — the listed prices are <strong>excluding VAT</strong>.</div>
+        </details>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="yr"></span> Iscor Bitumen Paint • Waterproof &amp; Protection</div>
+      <div>Contact: Charlotte • <a href="tel:+27764935600">076 493 5600</a> • Three Rivers, Gauteng</div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
