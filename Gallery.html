@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iscor Bitumen Black Paint | Gallery</title>
+
+  <style>
+    body{
+      margin:0;
+      background:#0b0d10;
+      color:#e9eef5;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    }
+
+    :root{
+      --line:rgba(255,255,255,.10);
+      --accent:#f6c000;
+      --accent2:#ffda4d;
+      --radius:18px;
+      --max:1100px;
+    }
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:22px;
+    }
+
+    /* NAV */
+    .topnav{
+      position:sticky;
+      top:0;
+      z-index:999;
+      background:rgba(11,13,16,.82);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .navwrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      font-weight:950;
+    }
+
+    .brand img{
+      height:34px;
+    }
+
+    .links{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .links a{
+      text-decoration:none;
+      font-weight:850;
+      opacity:.92;
+    }
+
+    .links a:hover{
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    .cta{
+      background:linear-gradient(180deg,var(--accent2),var(--accent));
+      color:#111;
+      padding:10px 14px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:950;
+    }
+
+    /* CONTENT */
+    .card{
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+    }
+
+    h1{
+      margin:0 0 10px;
+    }
+
+    .muted{
+      color:#a9b4c0;
+      line-height:1.6;
+    }
+
+    /* GALLERY GRID */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+
+    .gallery-img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      transition:transform 0.25s ease;
+    }
+
+    .gallery-img:hover{
+      transform:scale(1.05);
+    }
+
+    @media(max-width:900px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .brand img{
+        height:30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="topnav">
+    <div class="navwrap">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Logo" />
+        <span>ISCOR BITUMEN</span>
+      </a>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="prices.html">Prices</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="cta" href="https://wa.me/27764935600" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="wrap">
+    <div class="card">
+      <h1>Gallery</h1>
+      <p class="muted">
+        Real applications of Iscor Bitumen Black Paint on roofs, metal, fences and more.
+      </p>
+
+      <div class="grid">
+        <img src="photo1.jpg" alt="Bitumen paint application 1" class="gallery-img">
+        <img src="photo2.jpg" alt="Bitumen paint application 2" class="gallery-img">
+        <img src="photo3.jpg" alt="Bitumen paint application 3" class="gallery-img">
+        <img src="photo4.jpg" alt="Bitumen paint application 4" class="gallery-img">
+        <img src="photo5.jpg" alt="Bitumen paint application 5" class="gallery-img">
+        <img src="photo6.jpg" alt="Bitumen paint application 6" class="gallery-img">
+        <img src="photo7.jpg" alt="Bitumen paint application 7" class="gallery-img">
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
